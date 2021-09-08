@@ -1,0 +1,37 @@
+@import "src/app/common";
+.recipe-details {
+  background-color: $colour-white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  &__container {
+    &__image {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    &__btn {
+      margin-top: 1rem;
+      padding-top: 1rem;
+    }
+  }
+    &__image {
+      max-width: 450px;
+    }
+  &__title {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  &__description {
+    font-size: 1.5rem;
+  }
+  &__btn {
+    border: none;
+    padding: 1.5rem 2rem;
+    background-color: $colour-orange;
+    color: $colour-white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "src/app/common";
+.recipecard {
+  display: flex;
+  background-color: $colour-white;
+  max-width: 395px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  max-height: 100px;
+  &__text {
+    &__title {
+      color: $colour-red;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    &__description {
+      color: $colour-orange;
+      font-size: 1.25rem;
+      overflow: hidden;
+    }
+  }
+  &__content__container {
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+    &__image {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     & > img {
+        max-width: 50px;
+      }
+    }
+  }
+}

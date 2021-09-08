@@ -1,0 +1,15 @@
+<section class="recipe-book">
+  <section class="recipe-book__container__btn">
+    <button class="recipe-book__recipe__btn">Add New Recipe</button>
+  </section>
+  <section class="recipe-book__container__recipe-list">
+    <section class="recipe-book__recipe-list">
+      <div *ngFor="let number of numbers">
+        <app-recipecard></app-recipecard>
+      </div>
+    </section>
+    <section class="recipe-book__recipe-detail">
+      <app-recipedetails></app-recipedetails>
+    </section>
+  </section>
+</section>
