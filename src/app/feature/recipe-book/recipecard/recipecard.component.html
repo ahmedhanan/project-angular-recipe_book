@@ -1,13 +1,13 @@
 <section class="recipecard">
-  <div class="recipecard__content__container__text">
-    <h1 class="recipecard__text__title">Title</h1>
+  <div class="recipecard__content__container__text" (click)="onClick()">
+    <h1 class="recipecard__text__title">{{recipeData.title}}</h1>
     <div class="recipecard__text__description">
       <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolor eaque fuga laudantium neque non sapiente tempore. A adipisci atque exercitationem expedita fuga minima nisi numquam qui vel, voluptates. Ullam.
+        {{recipeData.description}}
       </p>
     </div>
   </div>
   <div class="recipecard__content__container__image">
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+    <img src="{{recipeData.image}}">
   </div>
 </section>

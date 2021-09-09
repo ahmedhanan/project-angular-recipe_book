@@ -4,12 +4,15 @@
   </section>
   <section class="recipe-book__container__recipe-list">
     <section class="recipe-book__recipe-list">
-      <div *ngFor="let number of numbers">
-        <app-recipecard></app-recipecard>
+      <div *ngFor="let recipe of recipes">
+        <app-recipecard [recipeData]="recipe"></app-recipecard>
       </div>
     </section>
-    <section class="recipe-book__recipe-detail">
+    <section *ngIf="selectedRecipe.title !== ''; else noSelectedRecipe" class="recipe-book__recipe-detail">
       <app-recipedetails></app-recipedetails>
     </section>
+    <ng-template #noSelectedRecipe>
+      <p class="recipe-book__no-recipe">Please select a recipe to view more details about your selection.</p>
+    </ng-template>
   </section>
 </section>

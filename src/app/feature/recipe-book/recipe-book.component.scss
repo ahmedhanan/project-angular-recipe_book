@@ -34,5 +34,9 @@
   &__recipe-detail {
     width: 60%;
   }
-
+  &__no-recipe {
+    font-size: 3rem;
+    font-weight: 900;
+    color: $colour-white;
+  }
 }
