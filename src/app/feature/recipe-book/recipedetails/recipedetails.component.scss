@@ -9,8 +9,11 @@
       margin-bottom: 1.5rem;
     }
     &__btn {
-      margin-top: 1rem;
-      padding-top: 1rem;
+      margin-top: 2.5rem;
+    }
+    &__back-btn {
+      border-bottom: 1px solid $colour-orange;
+      margin-bottom: 1rem;
     }
   }
     &__image {

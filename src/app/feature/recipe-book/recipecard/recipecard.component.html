@@ -1,13 +1,13 @@
-<section class="recipecard">
-  <div class="recipecard__content__container__text" (click)="onClick()">
-    <h1 class="recipecard__text__title">{{recipeData.title}}</h1>
-    <div class="recipecard__text__description">
-      <p>
+<section class="recipecard__container" (click)="onClick()">
+  <div class="recipecard__container__image-ctn">
+    <img class="recipecard__container__image-ctn__image" src="{{recipeData.image}}">
+  </div>
+  <div class="recipecard__container__content-ctn">
+      <h1 class="recipecard__container__content-ctn__title">
+        {{recipeData.title}}
+      </h1>
+      <p class="recipecard__container__content-ctn__description">
         {{recipeData.description}}
       </p>
-    </div>
-  </div>
-  <div class="recipecard__content__container__image">
-    <img src="{{recipeData.image}}">
   </div>
 </section>

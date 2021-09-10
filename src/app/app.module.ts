@@ -10,7 +10,9 @@ import { RecipedetailsComponent } from './feature/recipe-book/recipedetails/reci
 import {RouterModule, Routes} from "@angular/router";
 
 const appRoutes : Routes = [
+  {path: '*', component: AppComponent},
   {path: 'recipes', component: RecipeBookComponent},
+  {path: 'recipe/:id', component: RecipedetailsComponent},
   {path: 'shop', component: ShoppingListComponent}
 ]
 
