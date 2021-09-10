@@ -21,8 +21,12 @@
   }
   &__list__item {
     margin-left: 1.25rem;
+
     &:first-child {
       margin-left: 0;
+    }
+    &--active {
+      text-decoration: underline;
     }
   }
   &__list__item__text{

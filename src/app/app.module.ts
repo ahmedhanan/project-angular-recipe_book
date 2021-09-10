@@ -7,6 +7,12 @@ import { ShoppingListComponent } from './feature/shopping-list/shopping-list.com
 import { RecipeBookComponent } from './feature/recipe-book/recipe-book.component';
 import { RecipecardComponent } from './feature/recipe-book/recipecard/recipecard.component';
 import { RecipedetailsComponent } from './feature/recipe-book/recipedetails/recipedetails.component';
+import {RouterModule, Routes} from "@angular/router";
+
+const appRoutes : Routes = [
+  {path: 'recipes', component: RecipeBookComponent},
+  {path: 'shop', component: ShoppingListComponent}
+]
 
 @NgModule({
   declarations: [
@@ -18,7 +24,8 @@ import { RecipedetailsComponent } from './feature/recipe-book/recipedetails/reci
     RecipedetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
