@@ -1,0 +1,15 @@
+<form (ngSubmit)="loginFormSubmit(loginForm)" #loginForm="ngForm">
+  <div ngModelGroup="formFields" #formFields="ngModelGroup">
+    <label for="username">
+      Email
+    </label>
+    <input id="username" name="email" type="text" required ngModel #email="ngModel" email>
+    <span *ngIf="!email.valid && email.touched">Please enter a valid email address!</span>
+    <label for="password">
+      Password
+    </label>
+    <input id="password" name="password" type="password" required ngModel #password="ngModel">
+    <span *ngIf="!password.valid && password.touched">Please enter a valid password!</span>
+  </div>
+  <button [disabled]="!formFields.valid" type="submit">Login</button>
+</form>

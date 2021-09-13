@@ -1,0 +1,25 @@
+<form [formGroup]="registerForm" (ngSubmit)="onRegisterFormSubmit()">
+  <div>
+    <label for="firstName">
+      First Name
+    </label>
+    <input formControlName="firstName" type="text" id="firstName">
+    <span *ngIf="registerForm.get('userData.firstName').touched && !registerForm.get('userData.firstName').valid">First Name is required.</span>
+    <label for="lastName">
+      Last Name
+    </label>
+    <input formControlName="lastName" type="text" id="lastName">
+    <span *ngIf="registerForm.get('userData.lastName').touched && !registerForm.get('userData.lastName').valid">Last Name is required.</span>
+    <label for="email">
+      Email
+    </label>
+    <input formControlName="email" type="text" id="email">
+    <span *ngIf="registerForm.get('email').touched && !registerForm.get('email').valid">Email is required.</span>
+    <label for="password">
+      Password
+    </label>
+    <input formControlName="password" type="text" id="password">
+    <span *ngIf="registerForm.get('password').touched && !registerForm.get('password').valid">Password is required and needs to be minimum 8 characters.</span>
+  </div>
+  <button>Submit</button>
+</form>
